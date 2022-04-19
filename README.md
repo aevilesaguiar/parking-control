@@ -1,5 +1,8 @@
 # Parking Control API   - Spring Boot - Michelli Brito
 
+## Aplicação
+
+API para controle de estacionamento
 
 ## Tecnologias
 

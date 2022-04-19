@@ -13,7 +13,7 @@ public class ParkingControlApplication {
 		SpringApplication.run(ParkingControlApplication.class, args);
 	}
 
-	@GetMapping("/")
+	@GetMapping("/hello")
 	public String index(){
 		return "Olá Mundo!";
 	}
