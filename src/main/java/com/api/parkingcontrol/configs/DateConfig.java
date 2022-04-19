@@ -9,12 +9,14 @@ import org.springframework.context.annotation.Primary;
 
 import java.time.format.DateTimeFormatter;
 
-@Configuration
+@Configuration //deve ser anotada com @Configuration
 public class DateConfig {
 
     public static final String DATETIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
     public static LocalDateTimeSerializer LOCAL_DATETIME_SERIALIZER = new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(DATETIME_FORMAT));
 
+
+    //sempre que for feito serializer usamos ObjeterMapper
     @Bean
     @Primary
     public ObjectMapper objectMapper() {
